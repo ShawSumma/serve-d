@@ -148,7 +148,7 @@ void updateDCD()
 			url = commonPrefix ~ "-linux-x86_64.tar.gz";
 		else version (OSX)
 			url = commonPrefix ~ "-osx-x86_64.tar.gz";
-		else
+		else static if (!isDCDFromSource)
 			static assert(false);
 
 		import std.process : pipeProcess, Redirect, Config, wait;

@@ -33,6 +33,7 @@
 			"name": "unittest",
 			"mainSourceFile": "source/app.d",
 			"dflags": ["-checkaction=context"],
+			"versions": ["DCDFromSource"],
 			"excludedSourceFiles": [
 				"source/app.d",
 				"source/served/info.d"
